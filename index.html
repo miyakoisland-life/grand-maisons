@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>宮古島の賃貸物件|グランメゾンS</title>
-  <meta name="description" content="宮古島の賃貸アパート『Grand Maison S』の公式ページ。マンスリーマンションとしてもご案内可能。宮古島で、ちょっといい暮らし。物件情報・特徴・アクセス・お問い合わせをご案内します。" />
+  <title>Grand Maison S | 宮古島の賃貸物件</title>
+  <meta name="description" content="Grand Maison Sの公式ページ。宮古島で、ちょっといい暮らし。物件情報・特徴・アクセス・お問い合わせをご案内します。" />
   <style>
     :root {
       --bg: #f7f6f2;
@@ -275,52 +275,26 @@
       grid-template-columns: 1.3fr .7fr;
       gap: 18px;
     }
+    
+  .gallery-main,
+.gallery-side > div {
+  position: relative;
+  border-radius: 28px;
+  overflow: hidden;
+  min-height: 280px;
+  box-shadow: var(--shadow);
+}
 
-    .gallery-main,
-    .gallery-side > div {
-      border-radius: 28px;
-      overflow: hidden;
-      min-height: 280px;
-      background: #e8e8e8 center / cover no-repeat;
-      box-shadow: var(--shadow);
-    }
+.gallery-main {
+  min-height: 540px;
+}
 
-    .gallery-main {
-      min-height: 540px;
-      background-image: url('IMG/senmen.jpg');
-      background-position: center;
-    }
-
-    .gallery-side {
-      display: grid;
-      gap: 18px;
-    }
-      
-      
-    .gallery-side .one {
-  background-image: url('IMG/genkan.jpg');
-  background-size: cover;
-  background-position: center;
-
-  display: flex;
-  align-items: end;
-  padding: 24px;
-  color: #fff;
-  font-size: 1rem;
-}  
-
-      
-      
-      .gallery-side .two {
-  background-image: url('IMG/huro.jpg');
-  background-size: cover;
-  background-position: center;
-
-  display: flex;
-  align-items: end;
-  padding: 24px;
-  color: #fff;
-  font-size: 1rem;
+.gallery-main img,
+.gallery-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
       
     .cta {
@@ -391,20 +365,35 @@
     }
 
     @media (max-width: 720px) {
-      .topbar-inner {
-        min-height: auto;
-        padding: 12px 0;
-        flex-direction: column;
-        align-items: flex-start;
-      }
+  .topbar-inner {
+    min-height: auto;
+    padding: 12px 0;
+    flex-direction: column;
+    align-items: stretch;
+  }
 
-      .nav {
-        width: 100%;
-        overflow-x: auto;
-        gap: 16px;
-        font-size: .92rem;
-        padding-bottom: 4px;
-      }
+  .nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    font-size: .92rem;
+    padding-bottom: 4px;
+  }
+
+  .nav a {
+    text-align: center;
+    padding: 10px 12px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: rgba(255,255,255,.9);
+    white-space: nowrap;
+  }
+
+  .nav-cta {
+    padding: 10px 12px;
+  }
+}
 
       .cards {
         grid-template-columns: 1fr;
@@ -491,8 +480,8 @@
 
         <div class="cards">
           <article class="card">
-            <h3>デザイン</h3>
-            <p>白を基調にした統一感のある外観。清潔感と高級感を両立。</p>
+            <h3>契約の柔軟性</h3>
+            <p>１ヶ月単位で契約可能。短期契約、長期契約どちらもご対応致します。</p>
           </article>
           <article class="card">
             <h3>全室エアコン・衣類乾燥機完備</h3>
@@ -555,10 +544,17 @@
         </div>
 
         <div class="gallery">
-          <div class="gallery-main" aria-label="Grand Maison S 外観"></div>
+          <div class="gallery-main">
+            <img src="IMG/senmen.jpg" alt="宮古島 新築アパート グランメゾンS 外観">
+          </div>
           <div class="gallery-side">
-            <div class="one">クローゼット</div>
-            <div class="two">バスルーム</div>
+            <div class="one">
+              <img src="IMG/genkan.jpg" alt="宮古島 賃貸 グランメゾンS クローゼット">
+            </div>
+
+<div class="two">
+  <img src="IMG/huro.jpg" alt="宮古島 賃貸 グランメゾンS バスルーム">
+</div>
           </div>
         </div>
       </div>
